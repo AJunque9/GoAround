@@ -41,14 +41,14 @@ The command structure is the following:
 Where all the options between brackets are optional. The values for these options are:
 
 - **-m or --mode**: the only mandatory option. It indicates the operation mode in which the tool must run. Go to section [Operation modes](#operation-modes) for more info.
-- **-t o --type**: it indicates the type of bypass that is going to be used when the mode is *bypass* or the type of obfuscation method when the mode is *obfuscate*. See section [Bypass types](#bypass-types) to know the different bypass types and section [Obfuscation methods](#obfuscation-methods) to know the available obfuscation methods.
-- **-f o --obfuscation**: when the operation mode is *bypass*, this option is used to select the obfuscation type for the bypass. This option is not available in the *obfuscate* mode, use "-t" or "--type" instead. To know the different obfuscation methods pleasee read section [Obfuscation methods](#obfuscation-methods) .
-- **-i o --input**: only used in *obfuscate* mode. It allows the user to select the file to obfuscate.
-- **-o o --output**: this option allows the user to select the name of the generated script. The name must end in ".ps1". By default, the output file name will be "output.ps1".
+- **-t or --type**: it indicates the type of bypass that is going to be used when the mode is *bypass* or the type of obfuscation method when the mode is *obfuscate*. See section [Bypass types](#bypass-types) to know the different bypass types and section [Obfuscation methods](#obfuscation-methods) to know the available obfuscation methods.
+- **-f or --obfuscation**: when the operation mode is *bypass*, this option is used to select the obfuscation type for the bypass. This option is not available in the *obfuscate* mode, use "-t" or "--type" instead. To know the different obfuscation methods pleasee read section [Obfuscation methods](#obfuscation-methods) .
+- **-i or --input**: only used in *obfuscate* mode. It allows the user to select the file to obfuscate.
+- **-o or --output**: this option allows the user to select the name of the generated script. The name must end in ".ps1". By default, the output file name will be "output.ps1".
   
 Furthermore, thw following options are also supported and must be run alone (without any other option):
-- **-h o --help**: shows the user the tool's usage guide.
-- **-v o --version**: shows the tool's version number.
+- **-h or --help**: shows the user the tool's usage guide.
+- **-v or --version**: shows the tool's version number.
 
 ### Operation modes
 
@@ -86,16 +86,21 @@ Here you can see some usage examples:
 **Show help menu**
 
 `python main.py -h`
+
 `python main.py --help`
 
 **Show tool's version number**
+
 `python main.py -v`
+
 `python main.py --version`
 
 **Generate reflection bypass obfuscated using variables insertion**
+
 `python main.py -m bypass -t reflection -f insertion`
 
 **Generate Paul Laîné's bypass changing the output file name**
+
 `python main.py -m bypass -t scan_buffer_laine -o "output_name.ps1"`
 
 **Obfuscate file using strings concatenation method**
