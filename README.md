@@ -104,4 +104,5 @@ Here you can see some usage examples:
 `python main.py -m bypass -t scan_buffer_laine -o "output_name.ps1"`
 
 **Obfuscate file using strings concatenation method**
+
 `python main.py -m obfuscate -t concatenation -i "input_required.ps1"`
