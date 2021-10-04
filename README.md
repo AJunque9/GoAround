@@ -13,7 +13,7 @@ A tool that allows the generation of AMSI bypasses and the automatic obfuscation
     - [Examples](#examples)
 
 ## Liability disclaimer
-This tool has been developed to help pentesters in their daily post-exploitation tasks and as a research project. Any malicious of this tool or its usage in third-party systems without the corresponding permission shall be under the sole responsibility of the user.
+This tool has been developed to help pentesters in their daily post-exploitation tasks and as a research project. Any malicious usage of this tool or its usage in third-party systems without the corresponding permission shall be under the sole responsibility of the user.
 
 ## Installation
 
